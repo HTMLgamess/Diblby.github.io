@@ -23,13 +23,19 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Inter, sans-serif; }
 
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--text);
-      overflow-x: hidden;
-      position: relative;
-    }
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 500px at 20% -10%, rgba(180, 0, 0, .35), transparent 60%),
+    radial-gradient(900px 500px at 80% 0%, rgba(120, 0, 0, .30), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+
 
     #particles {
       position: fixed;
