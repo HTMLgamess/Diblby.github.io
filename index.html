@@ -3,38 +3,36 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Samoneus red</title>
-<link rel="icon" type="image/png" href="images/Samone.png">
+<title>Samoneus Gold</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 :root {
---bg: linear-gradient(180deg, #8b0000 0%, #000000 100%);
---panel: #1a0000;
---panel-soft: #130000;
-
---red-1: #ff4d4d;
---red-2: #cc0000;
---red-3: #800000;
-
+--bg: #050505;
+--panel: #0d0d0d;
+--panel-soft: #131313;
+--gold-1: #ffe08a;
+--gold-2: #ffbf3f;
+--gold-3: #cfa335;
 --text: #f5f5f5;
---muted: #b3b3b3;
+--muted: #9b9b9b;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: Inter, sans-serif; }
 
 body {
-  min-height: 100vh;
-  background:
-    radial-gradient(900px 500px at 20% -10%, rgba(180, 0, 0, .35), transparent 60%),
-    radial-gradient(900px 500px at 80% 0%, rgba(120, 0, 0, .30), transparent 60%),
-    var(--bg);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  position: relative;
+min-height: 100vh;
+background:
+radial-gradient(900px 500px at 20% -10%, rgba(255,200,90,.15), transparent 60%),
+radial-gradient(900px 500px at 80% 0%, rgba(255,200,90,.12), transparent 60%),
+var(--bg);
+color: var(--text);
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+position: relative;
 }
 
 header {
@@ -43,7 +41,7 @@ top: 0;
 z-index: 50;
 backdrop-filter: blur(14px);
 background: rgba(5,5,5,.7);
-border-bottom: 1px solid rgba(255, 0, 20, .45);
+border-bottom: 1px solid rgba(255,215,120,.12);
 }
 
 .nav {
@@ -59,7 +57,7 @@ justify-content: space-between;
 font-weight: 900;
 font-size: 1.7rem;
 letter-spacing: 1px;
-background: linear-gradient(120deg, #fff, var(--red-1), #fff);
+background: linear-gradient(120deg, #fff, var(--gold-1), #fff);
 background-size: 200% auto;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -67,19 +65,19 @@ animation: shine 6s linear infinite;
 }
 
 .nav a button {
-background: linear-gradient(135deg, var(--red-1), var(--red-3));
+background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
 border: none;
 padding: 12px 22px;
 border-radius: 14px;
 font-weight: 800;
 cursor: pointer;
-box-shadow: 0 0 35px rgba(255, 0, 20, .45);
+box-shadow: 0 0 35px rgba(255,215,120,.45);
 transition: transform .25s, box-shadow .25s;
 }
 
 .nav a button:hover {
 transform: translateY(-2px) scale(1.03);
-box-shadow: 0 0 65px rgba(153,0,0,.8);
+box-shadow: 0 0 65px rgba(255,215,120,.8);
 }
 
 .hero {
@@ -99,7 +97,7 @@ font-size: clamp(3rem, 6vw, 4.6rem);
 font-weight: 900;
 line-height: 1.02;
 margin-bottom: 22px;
-background: linear-gradient(120deg, #fff, var(--red-1));
+background: linear-gradient(120deg, #fff, var(--gold-1));
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -118,13 +116,13 @@ flex-wrap: wrap;
 }
 
 .btn-primary {
-background: linear-gradient(135deg, var(--red-1), var(--red-3));
+background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
 border: none;
 padding: 16px 30px;
 font-weight: 900;
 border-radius: 16px;
 cursor: pointer;
-box-shadow: 0 0 45px rgba(255,0,0,.5);
+box-shadow: 0 0 45px rgba(255,215,120,.55);
 transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -135,8 +133,8 @@ box-shadow: 0 0 60px rgba(255,215,120,0.75), 0 0 120px rgba(255,215,120,0.3);
 
 .btn-outline {
 background: transparent;
-border: 1px solid rgba(255, 0, 20, .45);
-color: var(--red-1);
+border: 1px solid rgba(255,215,120,.45);
+color: var(--gold-1);
 padding: 16px 30px;
 border-radius: 16px;
 font-weight: 700;
@@ -148,7 +146,7 @@ position: relative;
 background: linear-gradient(180deg, #171104, #090909);
 border-radius: 30px;
 padding: 36px 34px;
-border: 1px solid rgba(255, 0, 20, .45);
+border: 1px solid rgba(255,215,120,.18);
 box-shadow:
 inset 0 0 50px rgba(255,215,120,.05),
 0 25px 90px rgba(0,0,0,.9);
@@ -172,7 +170,7 @@ pointer-events: none;
 .hero-card h3 {
 font-size: 1.4rem;
 margin-bottom: 22px;
-color: var(--red-1);
+color: var(--gold-1);
 position: relative;
 z-index: 1;
 }
@@ -197,7 +195,7 @@ position: relative;
 .trending-header { display: flex; align-items: center; margin-bottom: 15px; gap: 12px; }
 .trending-header h2 { 
     font-size: 0.9rem; 
-    color: var(--red-1); 
+    color: var(--gold-1); 
     text-transform: uppercase; 
     letter-spacing: 2px; 
     opacity: 0.9;
@@ -218,7 +216,7 @@ position: relative;
 @keyframes autoscroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 .game-card { min-width: 180px; height: 100px; background: #0a0a0a; border: 1px solid rgba(255,215,120,0.1); border-radius: 14px; overflow: hidden; cursor: pointer; position: relative; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s; }
-.game-card:hover { transform: scale(1.05); border-color: var(--red-1); }
+.game-card:hover { transform: scale(1.05); border-color: var(--gold-1); }
 .game-card img { width: 100%; height: 100%; object-fit: cover; opacity: 0.4; transition: opacity 0.4s; }
 .game-card:hover img { opacity: 0.8; }
 .game-card .game-info { position: absolute; bottom: 0; width: 100%; padding: 8px 12px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); }
@@ -226,7 +224,7 @@ position: relative;
 
 footer {
 margin-top: auto;
-border-top: 1px solid rgba(255, 0, 20, .45);
+border-top: 1px solid rgba(255, 215, 120, 0.12);
 padding: 24px;
 background: rgba(5, 5, 5, 0.8);
 position: relative;
@@ -247,7 +245,7 @@ flex-wrap: wrap;
 .footer-left .logo { font-size: 1.1rem; margin-bottom: 0; }
 .footer-links { display: flex; gap: 20px; align-items: center; }
 .footer-links a, .footer-links button { color: var(--muted); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; background: none; border: none; cursor: pointer; padding: 0; }
-.footer-links a:hover, .footer-links button:hover { color: var(--red-1); }
+.footer-links a:hover, .footer-links button:hover { color: var(--gold-1); }
 .footer-right { font-size: 0.85rem; color: var(--muted); display: flex; align-items: center; gap: 15px; }
 .status-dot { color: #4CAF50; font-size: 0.7rem; vertical-align: middle; }
 
@@ -272,15 +270,15 @@ justify-content: center;
 #popup-box {
 position: relative;
 background: linear-gradient(180deg, #171104, #090909);
-border: 1px solid rgba(255, 0, 20, .45);
+border: 1px solid rgba(255,215,120,.25);
 border-radius: 24px;
 padding: 36px 40px;
 width: min(420px, 90%);
-box-shadow: 0 0 60px rgba(255, 0, 20, .45), 0 30px 90px rgba(0,0,0,.9);
+box-shadow: 0 0 60px rgba(255,215,120,.35), 0 30px 90px rgba(0,0,0,.9);
 text-align: center;
 }
 
-#popup-box h2 { color: var(--red-1); margin-bottom: 12px; }
+#popup-box h2 { color: var(--gold-1); margin-bottom: 12px; }
 #popup-box p { color: var(--muted); font-size: 0.95rem; }
 
 #popup-close {
@@ -289,7 +287,7 @@ top: 14px;
 right: 16px;
 background: none;
 border: none;
-color: var(--red-1);
+color: var(--gold-1);
 font-size: 1.2rem;
 font-weight: 900;
 cursor: pointer;
@@ -318,9 +316,9 @@ transition: color 0.2s;
 <div id="popup-overlay">
 <div id="popup-box">
 <button id="popup-close">✕</button>
-<h2>Welcome to Samoneus red</h2>
-<p>Hey! Welcome to Samoneus red! We love anyone using this site except for a girl named Patrice, who should get off the site like a good girl.</p>
-<a href="https://discord.gg/JUepHp5vzt" target="_blank">
+<h2>Welcome to Samoneus Gold</h2>
+<p>Hey! Welcome to Samoneus Gold! We love anyone using this site except for a girl named Patrice, who should get off the site like a good girl.</p>
+<a href="https://discord.gg/Z9GSjDh6" target="_blank">
 <button id="discord-btn">Join the Discord</button>
 </a>
 </div>
@@ -328,7 +326,7 @@ transition: color 0.2s;
 
 <header>
 <div class="nav">
-<div class="logo">Samoneus red</div>
+<div class="logo">Samoneus GOLD</div>
 <div style="display:flex; gap:14px;">
 <a href="index.html"><button>Hub</button></a>
 <a href="play.html"><button>Games</button></a>
@@ -340,7 +338,7 @@ transition: color 0.2s;
 
 <section class="hero">
 <div>
-<h1>Samoneus<br>red</h1>
+<h1>Samoneus<br>Gold</h1>
 <p>Welcome to the Samoneus of UBG. This is the peak, and there is nothing better.</p>
 <div class="actions">
 <a href="play.html"><button class="btn-primary">Play Now</button></a>
@@ -358,7 +356,7 @@ transition: color 0.2s;
 
 <div class="trending-section">
     <div class="trending-header">
-        <h2><i class="fa-solid fa-fire" style="color: var(--red-2);"></i> Featured Games</h2>
+        <h2><i class="fa-solid fa-fire" style="color: var(--gold-2);"></i> Featured Games</h2>
         <div class="line"></div>
     </div>
     <div class="scroll-container">
@@ -369,7 +367,7 @@ transition: color 0.2s;
 <footer>
 <div class="footer-container">
 <div class="footer-left">
-<div class="logo">Samoneus red</div>
+<div class="logo">Samoneus GOLD</div>
 <span style="color: rgba(255,215,120,0.2)">|</span>
 <div class="footer-links">
 <a href="index.html">Hub</a>
@@ -381,7 +379,6 @@ transition: color 0.2s;
 </div>
 </div>
 <div class="footer-right">
-<span>&copy; 2026 Owned by <strong>ScramJr</strong></span>
 <span style="color: rgba(255,215,120,0.2)">|</span>
 <span><span class="status-dot">●</span> All games online</span>
 </div>
@@ -393,7 +390,7 @@ transition: color 0.2s;
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
 
 <script>
-const gamesUrl = 'https://raw.githubusercontent.com/ten8mystery/Samoneus-red/main/data/games.json';
+const gamesUrl = 'https://raw.githubusercontent.com/ten8mystery/Samoneus-Gold/main/data/games.json';
 
 async function loadGames() {
     const featuredList = [
@@ -427,7 +424,7 @@ async function loadGames() {
             card.innerHTML = `
                 <img src="${game.image || ''}">
                 <div class="game-info">
-                    <span><i class="fa-solid fa-fire" style="color: var(--red-2);"></i> ${game.name}</span>
+                    <span><i class="fa-solid fa-fire" style="color: var(--gold-2);"></i> ${game.name}</span>
                 </div>`;
             return card;
         };
@@ -444,7 +441,7 @@ async function loadGames() {
 }
 loadGames();
 
-const firebaseConfig = { apiKey: "AIzaSyCAMwP6d2aZ7y1XK0YUujKmDg-50Tm_xQw", authDomain: "redhub-c1a71.firebaseapp.com", databaseURL: "https://redhub-c1a71-default-rtdb.firebaseio.com/", projectId: "redhub-c1a71" };
+const firebaseConfig = { apiKey: "AIzaSyCAMwP6d2aZ7y1XK0YUujKmDg-50Tm_xQw", authDomain: "goldhub-c1a71.firebaseapp.com", databaseURL: "https://goldhub-c1a71-default-rtdb.firebaseio.com/", projectId: "goldhub-c1a71" };
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.database();
