@@ -10,29 +10,31 @@
 
 <style>
 :root {
---bg: #050505;
---panel: #0d0d0d;
---panel-soft: #131313;
---gold-1: #ffe08a;
---gold-2: #ffbf3f;
---gold-3: #cfa335;
+--bg: linear-gradient(180deg, #8b0000 0%, #000000 100%);
+--panel: #1a0000;
+--panel-soft: #130000;
+
+--red-1: #ff4d4d;
+--red-2: #cc0000;
+--red-3: #800000;
+
 --text: #f5f5f5;
---muted: #9b9b9b;
+--muted: #b3b3b3;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: Inter, sans-serif; }
 
 body {
-min-height: 100vh;
-background:
-radial-gradient(900px 500px at 20% -10%, rgba(255,200,90,.15), transparent 60%),
-radial-gradient(900px 500px at 80% 0%, rgba(255,200,90,.12), transparent 60%),
-var(--bg);
-color: var(--text);
-display: flex;
-flex-direction: column;
-overflow-x: hidden;
-position: relative;
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 500px at 20% -10%, rgba(180, 0, 0, .35), transparent 60%),
+    radial-gradient(900px 500px at 80% 0%, rgba(120, 0, 0, .30), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
 }
 
 header {
